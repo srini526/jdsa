@@ -17,6 +17,7 @@ class Prog1{
         }
         System.out.print(n+" ");
         recursion(n-1);
+        System.out.print(n+" ");
     }
 
 }
