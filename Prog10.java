@@ -28,7 +28,7 @@ public class Prog10 {
     }
     public static int pow (int p,int q){
         if(q<=1) return p;
-        return p*pow(p,q-1);
+        return p*pow(p,q-1); //O(n)
     }
 }
 
