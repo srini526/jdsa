@@ -15,12 +15,15 @@ public class prog11 {
 
     // }
     static int AlternatingSumofNumber(int n){
-        int sum = 0;
-        for(int i=1;i<=n;i++){
-            if(i%2 !=0) sum+=i;
-            else sum -= i;
-        }
-        return sum;
+        // int sum = 0;
+        // for(int i=1;i<=n;i++){
+        //     if(i%2 !=0) sum+=i;
+        //     else sum -= i;
+        // }
+        // return sum;
+        if(n==1) return 1;
+        if(n%2!=0) return n + AlternatingSumofNumber(n-1);
+        else return -n + AlternatingSumofNumber(n-1);
     }
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
