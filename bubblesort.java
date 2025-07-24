@@ -23,4 +23,3 @@ public class bubblesort {
     System.out.print(arr[a]+" ");
 }}
 }
-
