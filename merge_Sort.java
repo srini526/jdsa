@@ -41,11 +41,11 @@ public class merge_Sort {
         }
     }
 
-    static void merge_Sort(int[] arr, int l, int r) {
+    static void merge_Sorts(int[] arr, int l, int r) {
         if (l < r) {
             int mid = (l + r) / 2;
-            merge_Sort(arr, l, mid);
-            merge_Sort(arr, mid + 1, r);
+            merge_Sorts(arr, l, mid);
+            merge_Sorts(arr, mid + 1, r);
             merge(arr, l, mid, r); // <- CALL MERGE HERE!
         }
     }
@@ -53,7 +53,7 @@ public class merge_Sort {
     public static void main(String[] args) {
         int[] arr = { 1, 5, 4, 3, 9, 6, 2, 7 };
         System.out.println("Array before sorting: " + Arrays.toString(arr));
-        merge_Sort(arr, 0, arr.length - 1);
+        merge_Sorts(arr, 0, arr.length - 1);
         System.out.println("Array after sorting: " + Arrays.toString(arr));
     }
 }

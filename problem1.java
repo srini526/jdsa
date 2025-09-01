@@ -8,7 +8,7 @@ public class problem1 {
         int [] a = new int [N];
         int [] b = new int [N];
         for(int i=0;i<N;i++){
-            a[i]=a;
+            a[i] = a;
         }
     }
 }
